@@ -1,0 +1,71 @@
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form {
+    margin: 1rem;
+    text-wrap: wrap;
+    display: grid;
+    grid-template-areas: 
+        "title title title title"
+        "first-name last-name last-name job-title"
+        "company linkedin linkedin email-address"
+        "meeting meeting fill-in fill-in"
+        "message message message message"
+        "misc misc misc misc";
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 2rem;
+}
+#title {
+    grid-area: title;
+    text-align: center;
+}
+#first-name {
+    grid-area: first-name;
+}
+#last-name {
+    grid-area: last-name;
+}
+#job-title {
+    grid-area: job-title;
+}
+#company {
+    grid-area: company;
+}
+#linkedin {
+    grid-area: linkedin;
+}
+#email-address {
+    grid-area: email-address;
+}
+#meeting {
+    grid-area: meeting;
+}
+#fill-in {
+    grid-area: fill-in;
+}
+#message {
+    grid-area: message;
+}
+#misc {
+    grid-area: misc;
+}
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.25rem;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+}
+textarea {
+    resize: none;
+}
+#format {
+    margin: 1rem 0rem;
+}
+#submit-button {
+    background-color: forestgreen;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
