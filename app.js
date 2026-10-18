@@ -11,6 +11,8 @@ const app = express();
 // Define the port number where our server will listen
 const PORT = 3002;
 
+app.use(express.static('public'));
+
 /*
  * Define the root path ('/')
  * When someone visits our website's home page, this 
@@ -19,10 +21,9 @@ const PORT = 3002;
  * res: allows us to send back a response to the client
  */
 app.get('/', (req, res) => {
-
-    // Send text as a response to the client
-    res.send('Hello, World!');
+  res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
+
 
 /*
  * Start the server and tell it listen on the port

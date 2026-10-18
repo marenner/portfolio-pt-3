@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        
+        <link rel="icon" href="images/briefcase-icon.png">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <h1 id="title">Contact Form</h1>
+    <body>
+        <form id="contact" action="#" method="get">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+            <label for="job">Job Title</label>
+            <input type="text" id="job" name="job">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+            <label for="linkedin">LinkedIn URL</label>
+            <input type="text" id="linkedin" name="linkedin">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email">
+
+            <label for="meet">How did we meet?</label>
+            <select id="meet" name="meet">
+                <option value="none">Please select</option>
+                <option value="inperson">In person</option>
+                <option value="online">Online</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="fill">Other (please specify)</label>
+            <input type="text" id="fill" name="fill">
+
+            <label for="comment">Comments</label>
+            <textarea rows="5" id="comment" name="comment"></textarea>
+
+            <input type="checkbox" id="mailing-list" name="mailing-list" value="y">
+            <label for="mailing-list">Please add me to your mailing list</label>
+
+            Choose an email format:
+            <input type="radio" id="html" name="method" value="html">
+            <label for="html">HTML</label>
+            <input type="radio" id="text" name="method" value="text">
+            <label for="text">Text</label>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </body>
+</html>

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/marenner/portfolio-pt-3#readme",
   "dependencies": {
     "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
