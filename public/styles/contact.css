@@ -63,11 +63,13 @@ textarea {
 #format {
     margin: 1rem 0rem;
 }
-#submit-button {
+#submit-button, #return {
+    color: white;
     background-color: forestgreen;
     border-radius: 0.25rem;
     border: none;
     padding: 0.5rem 1rem;
+    text-decoration: none;
 }
 .err {
     color: red;
